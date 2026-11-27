@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">✦ PromptCraft AI</div>
+            <p class="tagline">Create smarter prompts. Get better AI results.</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <section class="intro">
+                <span class="badge">AI POWERED LEARNING TOOL</span>
+                <h1>Build the Perfect <span>AI Prompt</span></h1>
+                <p>
+                    Turn your ideas into clear, effective AI prompts
+                    in just a few clicks.
+                </p>
+            </section>
+
+            <!-- Input Form -->
+            <section class="generator-card">
+
+                <h2>✦ Create Your Prompt</h2>
+                <p class="section-description">
+                    Fill in the details below to generate your prompt.
+                </p>
+
+                <div class="form-group">
+                    <label for="role">1. AI Role</label>
+                    <input
+                        type="text"
+                        id="role"
+                        placeholder="Example: Act as an experienced computer science teacher"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="task">2. Task</label>
+                    <textarea
+                        id="task"
+                        rows="3"
+                        placeholder="What do you want AI to do?"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="context">3. Context</label>
+                    <textarea
+                        id="context"
+                        rows="3"
+                        placeholder="Provide background information or relevant details..."
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="constraints">4. Constraints</label>
+                    <textarea
+                        id="constraints"
+                        rows="2"
+                        placeholder="Example: Use simple language, explain step by step..."
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="format">5. Output Format</label>
+                    <select id="format">
+                        <option value="">Select output format</option>
+                        <option value="Bullet Points">Bullet Points</option>
+                        <option value="Paragraph">Paragraph</option>
+                        <option value="Step-by-Step Guide">Step-by-Step Guide</option>
+                        <option value="Table">Table</option>
+                        <option value="Essay">Essay</option>
+                        <option value="Code with Explanation">Code with Explanation</option>
+                        <option value="Summary">Summary</option>
+                    </select>
+                </div>
+
+                <!-- Generate Button -->
+                <button class="generate-btn" id="generateBtn">
+                    ✨ Generate Prompt
+                </button>
+
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-card">
+
+                <div class="output-header">
+                    <div>
+                        <h2>Generated Prompt</h2>
+                        <p>Your AI prompt is ready to use.</p>
+                    </div>
+                    <span class="output-icon">✦</span>
+                </div>
+
+                <div class="output-box" id="output">
+                    <p class="placeholder">
+                        Your generated prompt will appear here...
+                    </p>
+                </div>
+
+                <div class="output-actions">
+                    <button class="copy-btn" id="copyBtn">
+                        📋 Copy Prompt
+                    </button>
+
+                    <button class="clear-btn" id="clearBtn">
+                        ↻ Clear All
+                    </button>
+                </div>
+
+                <p class="message" id="message"></p>
+
+            </section>
+
+            <!-- Sample Prompt -->
+            <section class="sample-card">
+
+                <h2>💡 Sample Prompt Reference</h2>
+
+                <div class="sample-content">
+                    <p><strong>Role:</strong> Act as an expert programming tutor.</p>
+
+                    <p><strong>Task:</strong> Explain the basics of Python programming.</p>
+
+                    <p><strong>Context:</strong> I am a first-year college student who is new to programming.</p>
+
+                    <p><strong>Constraints:</strong> Use simple English and provide practical examples.</p>
+
+                    <p><strong>Output Format:</strong> Step-by-Step Guide.</p>
+                </div>
+
+                <button class="sample-btn" id="sampleBtn">
+                    Use Sample Prompt
+                </button>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ✦ for College Students | PromptCraft AI</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

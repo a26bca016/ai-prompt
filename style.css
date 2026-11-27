@@ -1,0 +1,325 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f3f4ff;
+    color: #252545;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 22px 8%;
+    text-align: center;
+    border-bottom: 1px solid #e7e7f5;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #6654df;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #77778d;
+    margin-top: 4px;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 850px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Introduction */
+.intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.badge {
+    display: inline-block;
+    background: #e8e5ff;
+    color: #6654df;
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.intro h1 {
+    font-size: 38px;
+    margin: 15px 0 10px;
+    color: #252545;
+}
+
+.intro h1 span {
+    color: #725be9;
+}
+
+.intro p {
+    color: #77778d;
+    font-size: 15px;
+}
+
+/* Common Cards */
+.generator-card,
+.output-card,
+.sample-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 30px rgba(55, 48, 110, 0.07);
+}
+
+.generator-card h2,
+.output-card h2,
+.sample-card h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.section-description,
+.output-header p {
+    color: #85859b;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #343452;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #dddded;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    color: #33334d;
+    background: #fafaff;
+    transition: 0.3s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #725be9;
+    box-shadow: 0 0 0 3px rgba(114, 91, 233, 0.1);
+    background: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaaabe;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    background: linear-gradient(135deg, #7864ee, #5543c8);
+    box-shadow: 0 5px 15px rgba(100, 80, 220, 0.2);
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(100, 80, 220, 0.3);
+}
+
+/* Output Section */
+.output-card {
+    border: 1px solid #e5e0ff;
+}
+
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.output-header p {
+    margin-bottom: 15px;
+}
+
+.output-icon {
+    font-size: 30px;
+    color: #725be9;
+}
+
+.output-box {
+    min-height: 180px;
+    background: #f8f7ff;
+    border: 1px dashed #b9aef7;
+    border-radius: 10px;
+    padding: 20px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #343452;
+}
+
+.placeholder {
+    color: #aaaabe;
+}
+
+/* Output Buttons */
+.output-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.copy-btn,
+.clear-btn,
+.sample-btn {
+    padding: 12px 20px;
+}
+
+.copy-btn {
+    background: #6654df;
+    color: white;
+}
+
+.copy-btn:hover {
+    background: #5140c3;
+}
+
+.clear-btn {
+    background: #eeeeF8;
+    color: #55556d;
+}
+
+.clear-btn:hover {
+    background: #deddf0;
+}
+
+.message {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #27945e;
+    min-height: 18px;
+}
+
+/* Sample Section */
+.sample-card {
+    background: #faf9ff;
+    border: 1px solid #e5e0ff;
+}
+
+.sample-content {
+    background: white;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 18px 0;
+    border-left: 4px solid #725be9;
+}
+
+.sample-content p {
+    font-size: 14px;
+    color: #66667d;
+    margin-bottom: 10px;
+}
+
+.sample-content strong {
+    color: #33334d;
+}
+
+.sample-btn {
+    background: #e8e5ff;
+    color: #6654df;
+}
+
+.sample-btn:hover {
+    background: #dcd6ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #85859b;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .main-content {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .generator-card,
+    .output-card,
+    .sample-card {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .output-actions {
+        flex-direction: column;
+    }
+
+    .copy-btn,
+    .clear-btn,
+    .sample-btn {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
